@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gqK-bA-Fw8">
+            <objects>
+                <viewController id="YXg-xr-7rT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AxB-v2-AN9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="J-Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-ho-wfD">
+                                <rect key="frame" x="138" y="67" width="99" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jhope" translatesAutoresizingMaskIntoConstraints="NO" id="hwr-bl-SLQ">
+                                <rect key="frame" x="67" y="139" width="240" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyI-W9-ZCt">
+                                <rect key="frame" x="91" y="476" width="192" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Real Name: Hoseok Jung
+Birthday: 2/18/1994 (24)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KPe-nN-eRf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhW-DJ-EVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="46.326836581709152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Info_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bts" translatesAutoresizingMaskIntoConstraints="NO" id="4dI-ie-VWN">
+                                <rect key="frame" x="36.5" y="130" width="303" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="JIl-W8-w0i"/>
+                                    <constraint firstAttribute="width" constant="303" id="oxx-vl-gc9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-yB-ozF">
+                                <rect key="frame" x="36.5" y="414" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ad0-tI-nch"/>
+                                </constraints>
+                                <state key="normal" title="Jin"/>
+                                <connections>
+                                    <segue destination="ITD-Is-jsm" kind="show" id="mDg-Q1-aif"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp6-8F-0Ix">
+                                <rect key="frame" x="120.5" y="414" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BmN-pG-BiM"/>
+                                </constraints>
+                                <state key="normal" title="Suga"/>
+                                <connections>
+                                    <segue destination="z2A-73-jfj" kind="show" id="Q2R-mG-rON"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwr-A8-f7e">
+                                <rect key="frame" x="130" y="424" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-6f-3aJ">
+                                <rect key="frame" x="250.5" y="485" width="67" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="unw-fT-Ra1"/>
+                                </constraints>
+                                <state key="normal" title="Jungkook"/>
+                                <connections>
+                                    <segue destination="8gf-tQ-yHP" kind="show" id="XUd-YP-yya"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIo-qy-02B">
+                                <rect key="frame" x="309.5" y="414" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="keI-xh-z7l"/>
+                                </constraints>
+                                <state key="normal" title="RM"/>
+                                <connections>
+                                    <segue destination="6aC-Nt-hOG" kind="show" id="994-Zc-3Ha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-rc-Igf">
+                                <rect key="frame" x="68" y="485" width="37" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kl6-pu-yxk"/>
+                                </constraints>
+                                <state key="normal" title="Jimin"/>
+                                <connections>
+                                    <segue destination="0oz-I4-IES" kind="show" id="FcL-yD-FYW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgX-Vr-5oG">
+                                <rect key="frame" x="172.5" y="485" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1mT-Au-ujZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="cJm-PT-yfV"/>
+                                </constraints>
+                                <state key="normal" title="V"/>
+                                <connections>
+                                    <segue destination="2W1-ka-bV8" kind="show" id="GWa-xT-L6a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRP-Co-BXf">
+                                <rect key="frame" x="204.5" y="414" width="52" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tal-LD-DLX"/>
+                                    <constraint firstAttribute="width" constant="52" id="URu-uR-IXR"/>
+                                </constraints>
+                                <state key="normal" title="J-Hope"/>
+                                <connections>
+                                    <segue destination="YXg-xr-7rT" kind="show" id="8yf-lu-gca"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i9-1y-wk6">
+                                <rect key="frame" x="214" y="424" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyi-75-djb">
+                                <rect key="frame" x="142.5" y="553" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hPA-CU-mtZ"/>
+                                    <constraint firstAttribute="width" constant="90" id="p59-V1-YZ2"/>
+                                </constraints>
+                                <state key="normal" title="Group Profile"/>
+                                <connections>
+                                    <segue destination="XmH-RY-Rcy" kind="show" id="1Gm-FL-pgH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDC-HN-4fh">
+                                <rect key="frame" x="159.5" y="48" width="56.5" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="HBL-4f-AIL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gIo-qy-02B" firstAttribute="top" secondItem="4dI-ie-VWN" secondAttribute="bottom" constant="95" id="1FN-2i-BgE"/>
+                            <constraint firstItem="sDC-HN-4fh" firstAttribute="centerX" secondItem="jyi-75-djb" secondAttribute="centerX" id="5kM-qy-Ytz"/>
+                            <constraint firstItem="gIo-qy-02B" firstAttribute="trailing" secondItem="4dI-ie-VWN" secondAttribute="trailing" id="8Op-I9-WfV"/>
+                            <constraint firstItem="sDC-HN-4fh" firstAttribute="centerX" secondItem="QgX-Vr-5oG" secondAttribute="centerX" id="IH9-S6-APK"/>
+                            <constraint firstItem="gIo-qy-02B" firstAttribute="baseline" secondItem="CRP-Co-BXf" secondAttribute="baseline" id="Jjc-a9-xhM"/>
+                            <constraint firstItem="jyi-75-djb" firstAttribute="top" secondItem="QgX-Vr-5oG" secondAttribute="bottom" constant="38" id="OGB-1q-wal"/>
+                            <constraint firstItem="gIo-qy-02B" firstAttribute="baseline" secondItem="vmh-yB-ozF" secondAttribute="baseline" id="OQK-iV-we8"/>
+                            <constraint firstItem="xp6-8F-0Ix" firstAttribute="leading" secondItem="vmh-yB-ozF" secondAttribute="trailing" constant="54" id="Qcm-lK-6Eh"/>
+                            <constraint firstItem="sDC-HN-4fh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="WfA-mC-3pU"/>
+                            <constraint firstItem="dsf-6f-3aJ" firstAttribute="top" secondItem="gIo-qy-02B" secondAttribute="bottom" constant="41" id="XDm-Mk-IAk"/>
+                            <constraint firstItem="cYm-rc-Igf" firstAttribute="baseline" secondItem="dsf-6f-3aJ" secondAttribute="baseline" id="ZLc-Cb-MRc"/>
+                            <constraint firstItem="CRP-Co-BXf" firstAttribute="leading" secondItem="xp6-8F-0Ix" secondAttribute="trailing" constant="49" id="b1X-Qx-Bbp"/>
+                            <constraint firstItem="sDC-HN-4fh" firstAttribute="centerX" secondItem="4dI-ie-VWN" secondAttribute="centerX" id="d0f-AG-edG"/>
+                            <constraint firstItem="cYm-rc-Igf" firstAttribute="baseline" secondItem="QgX-Vr-5oG" secondAttribute="baseline" id="fwJ-4w-Z8P"/>
+                            <constraint firstItem="gIo-qy-02B" firstAttribute="leading" secondItem="CRP-Co-BXf" secondAttribute="trailing" constant="53" id="jBb-8U-9Pp"/>
+                            <constraint firstItem="4dI-ie-VWN" firstAttribute="top" secondItem="sDC-HN-4fh" secondAttribute="bottom" constant="27" id="l2n-la-dOx"/>
+                            <constraint firstItem="gIo-qy-02B" firstAttribute="baseline" secondItem="xp6-8F-0Ix" secondAttribute="baseline" id="qh0-Ap-XDW"/>
+                            <constraint firstItem="cYm-rc-Igf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="wAi-3R-GjJ"/>
+                            <constraint firstItem="sDC-HN-4fh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wvP-7a-knG"/>
+                            <constraint firstItem="dsf-6f-3aJ" firstAttribute="leading" secondItem="QgX-Vr-5oG" secondAttribute="trailing" constant="48" id="z7z-xd-JKd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="9.4452773613193415"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K53-qp-g5V">
+            <objects>
+                <viewController id="6aC-Nt-hOG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ECz-bb-Isd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odd-mO-uRO">
+                                <rect key="frame" x="165" y="85" width="44" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XW-9a-N61">
+                                <rect key="frame" x="91" y="434" width="193" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Real Name: Namjoon Kim
+Birthday: 9/12/1994 (23)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rm" translatesAutoresizingMaskIntoConstraints="NO" id="34H-vD-0bd">
+                                <rect key="frame" x="20" y="151" width="334" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ysm-bL-6t8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFA-5S-V5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-680.79999999999995" y="707.49625187406298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IMf-0g-1A5">
+            <objects>
+                <viewController id="z2A-73-jfj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQl-eb-4kg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOv-3H-9AG">
+                                <rect key="frame" x="151" y="82" width="72" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3Z-wv-QfB">
+                                <rect key="frame" x="144" y="164" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Suga" translatesAutoresizingMaskIntoConstraints="NO" id="teV-fd-ZK0">
+                                <rect key="frame" x="74" y="142" width="240" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Real Name: Yoongi Min Birthday: 3/9/1993 (25)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7e-rg-ttE">
+                                <rect key="frame" x="103" y="510" width="183" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="txP-9E-1a3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qid-dU-uI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="699.40029985007504"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Et3-WE-rfr">
+            <objects>
+                <viewController id="0oz-I4-IES" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Fm-Wy-Bgs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jimin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aV-Bq-NiW">
+                                <rect key="frame" x="153" y="81" width="69" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jimin" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-51-47e">
+                                <rect key="frame" x="67" y="139" width="240" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kg-Xd-hmt">
+                                <rect key="frame" x="84" y="517" width="206" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Real Name: Jimin Park
+Birthday: 10/13/1994 (23)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OKb-pU-Ti8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EN-LS-YNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="905.3973013493254"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ljt-Cl-Tbd">
+            <objects>
+                <viewController id="ITD-Is-jsm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1VP-lU-cwX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQH-Of-aKY">
+                                <rect key="frame" x="166" y="42" width="43" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlT-he-AIy">
+                                <rect key="frame" x="184" y="118" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jin" translatesAutoresizingMaskIntoConstraints="NO" id="LZd-XL-4AX">
+                                <rect key="frame" x="67" y="126" width="240" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPc-CR-E9w">
+                                <rect key="frame" x="97" y="483" width="180" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Real Name: Seokjin Kim
+Birthday: 9/4/1992 (25) </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aQE-LA-0Lh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQ9-q3-F18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="252.32383808095955"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qgX-uj-Rn2">
+            <objects>
+                <viewController id="8gf-tQ-yHP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lVD-MC-7u8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jungkook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAg-fu-pcM">
+                                <rect key="frame" x="124" y="68" width="127" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jungkook" translatesAutoresizingMaskIntoConstraints="NO" id="iU7-mn-KpR">
+                                <rect key="frame" x="67" y="134" width="240" height="341"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqL-hZ-RIQ">
+                                <rect key="frame" x="83" y="511" width="208" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Real Name: Jungkook Jeon
+Birthday: 9/1/1997 (20)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8Mv-yv-h2S"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="by4-UR-rhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724" y="-665.21739130434787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K77-P0-Yfc">
+            <objects>
+                <viewController id="2W1-ka-bV8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eAu-qh-c6i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fES-x0-qiR">
+                                <rect key="frame" x="177" y="52" width="20" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v" translatesAutoresizingMaskIntoConstraints="NO" id="17o-5Q-KyG">
+                                <rect key="frame" x="41" y="112" width="292" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNT-7Y-qqu">
+                                <rect key="frame" x="88" y="446" width="199" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Real Name: Taehyung Kim
+Birthday: 12/30/1995 (23)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9bm-QA-r2a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTY-za-khM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="-655.32233883058473"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z3g-QN-rgt">
+            <objects>
+                <viewController id="XmH-RY-Rcy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6mw-sN-1Fx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="30d111aa-4553-486e-b1b9-ff672de404ea" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-8t-qIx">
+                                <rect key="frame" x="40" y="71" width="294" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Debut: June 2013" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWY-Zp-7pE">
+                                <rect key="frame" x="115" y="304" width="144" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMB-87-0gN">
+                                <rect key="frame" x="160" y="473" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Awards"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw2-XB-z73">
+                                <rect key="frame" x="158" y="389" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Albums"/>
+                                <connections>
+                                    <segue destination="GwM-VC-EWC" kind="show" id="c29-F1-pi5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jf-gG-cwr">
+                                <rect key="frame" x="139" y="542" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Acheivements"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qiz-ec-rbd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TB2-m5-OfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="-418.74062968515744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X72-9M-avv">
+            <objects>
+                <viewController id="GwM-VC-EWC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rf8-CM-Ypa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXi-Bt-tgf">
+                                <rect key="frame" x="138" y="41" width="98" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="V25-NM-HW5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="810-fJ-4gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="-854.1229385307347"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="30d111aa-4553-486e-b1b9-ff672de404ea" width="1500" height="1000"/>
+        <image name="Suga" width="2000" height="3005"/>
+        <image name="bts" width="1200" height="800"/>
+        <image name="jhope" width="821" height="1199"/>
+        <image name="jimin" width="633" height="1125"/>
+        <image name="jin" width="447" height="670"/>
+        <image name="jungkook" width="800" height="1200"/>
+        <image name="rm" width="636" height="421"/>
+        <image name="v" width="520" height="520"/>
+    </resources>
+</document>
